@@ -1,2 +1,0 @@
-# langmark
-Programming Languages Benchmark
