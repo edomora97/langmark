@@ -39,7 +39,7 @@ find -regex '\./[0-9]+\.json'
 mv $(find -regex '\./[0-9]+\.json') results/
 ls results > results.txt
 
-git add .
+git add results.txt results
 
 git commit --allow-empty -am "Update from TravisCI" -m "On date: $(date)" -m "Execution time: $TOTAL_TIME"
 # The output of this command is not shown because it may contain the access token
