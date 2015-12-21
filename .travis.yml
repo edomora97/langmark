@@ -8,13 +8,28 @@ arch:
         - xyne-any=http://xyne.archlinux.ca/repos/xyne
         - papyros=http://dash.papyros.io/repos/$repo/$arch
     packages:
+        # C/C++
+        - gcc
+        - clang
+        - tcc
+        # Python
+        - pypy3
+        # Java
+        - jdk8-openjdk
+        # Vala
+        - vala
+        # VisualBasic/C#
+        - mono
         - reflector
-          # aur
+        # aur
         - archey3-git
-          # papyros
+         # papyros
         - papyros-shell
     script:
         - "sudo archey3"
         - "reflector --verbose -l 20 --sort rate -p https"
+        - "ls -la"
+        - "pacman -Q"
+        - "./script.sh"
 script:
     - "bash ./arch-travis.sh"
