@@ -11,6 +11,8 @@
     "VisualBasic.NET",
     "JavaScript",
     "D",
-    "Swift"
-  ]
-}
+    "Swift",
+    "Nim",
+    "Haskell",
+    "Crystal"
+]

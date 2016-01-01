@@ -27,6 +27,12 @@ arch:
         - gdc
         - ldc
         - dmd
+        # Nim
+        - nim
+        # Haskell
+        - ghc
+        # Crystal
+        - crystal
         # Swift
         #- swift-language-git
         #- icu
