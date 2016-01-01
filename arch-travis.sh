@@ -28,8 +28,6 @@ user="travis"
 user_home="/home/$user"
 user_uid=$UID
 
-export makeopts=("--skippgpcheck")
-
 # default packages
 default_packages=("base" "base-devel" "ruby" "git" "pacman")
 
@@ -44,9 +42,9 @@ setup_chroot() {
     # get root fs
     as_normal "curl -O $ARCH_TRAVIS_MIRROR/iso/$ARCH_TRAVIS_ARCH_ISO/$archive"
   fi
-
+  
   echo "Downloaded Arch ISO..."
-
+  
   # extract root fs
   as_root "tar xf $archive"
 
@@ -150,7 +148,7 @@ chroot_as_root() {
 
 # run command in chroot as normal user
 chroot_as_normal() {
-  local cmd="sudo chroot --userspec=$user:$user $ARCH_TRAVIS_CHROOT /bin/bash -c 'export HOME=$user_home USER=$user makeopts=(--skippgpcheck) && cd $user_home && $1'"
+  local cmd="sudo chroot --userspec=$user:$user $ARCH_TRAVIS_CHROOT /bin/bash -c 'export HOME=$user_home USER=$user && cd $user_home && $1'"
   if [ -n "$ARCH_TRAVIS_VERBOSE" ]; then
     verbose $cmd
   else
