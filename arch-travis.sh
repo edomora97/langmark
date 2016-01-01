@@ -28,6 +28,8 @@ user="travis"
 user_home="/home/$user"
 user_uid=$UID
 
+export makeopts=("--skippgpcheck")
+
 # default packages
 default_packages=("base" "base-devel" "ruby" "git" "pacman")
 

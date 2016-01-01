@@ -28,6 +28,7 @@ arch:
         - ldc
         - dmd
         # Swift
+        - swift-bin
         #- swift-language-git
         #- icu
         #- libbsd
