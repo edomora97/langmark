@@ -1,4 +1,7 @@
-[
+{
+  "wall_time": 30.0,
+  "expected_result": 2000,
+  "languages": [
     "C",
     "C++",
     "Java",
@@ -8,5 +11,8 @@
     "VisualBasic.NET",
     "JavaScript",
     "D",
-    "Swift"
-]
+    "Swift",
+    "Nim",
+    "Haskell"
+  ]
+}
