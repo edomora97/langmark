@@ -7,6 +7,10 @@
     "Java",
     "Vala",
     "Python3",
-    "D"
+    "D",
+    "VisualBasic.NET",
+    "C#",
+    "JavaScript",
+    "Haskell"
   ]
 }
