@@ -149,6 +149,9 @@ class Test:
         self.configuration['languages'] = config['languages']
         self.configuration['wall_time'] = WALL_TIME if WALL_TIME else config['wall_time']
         self.configuration['expected_result'] = config['expected_result']
+        if not self.configuration['expected_result']:
+            yellow('  Warning: the result check is disabled for this test')
+
 
     def run(self):
         results = {}
@@ -206,13 +209,13 @@ def run():
     print(output, file=open(filename, 'w'))
 
 def yellow(str):
-    print('\033[93m' + str + '\033[0m')
+    print('\033[33m' + str + '\033[0m')
 def green(str):
-    print('\033[92m\033[1m' + str + '\033[0m')
+    print('\033[32;1m' + str + '\033[0m')
 def blue(str):
-    print('\033[94m\033[1m' + str + '\033[0m')
+    print('\033[34;1m' + str + '\033[0m')
 def red(str):
-    print('\033[91m\033[1m' + str + '\033[0m')
+    print('\033[31;1m' + str + '\033[0m')
 
 def main(argv):
     global WALL_TIME

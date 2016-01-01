@@ -1,5 +1,5 @@
 {
-  "wall_time": 30.0,
+  "wall_time": 3.0,
   "expected_result": 1773,
   "languages": [
     "C",
@@ -7,9 +7,6 @@
     "Java",
     "Vala",
     "Python3",
-    "D",
-    "VisualBasic.NET",
-    "C#",
-    "JavaScript"
+    "D"
   ]
 }
