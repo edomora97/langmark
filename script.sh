@@ -6,10 +6,9 @@ set -e
 # DO NOT SAVE it into the repository or into this file
 
 TARGET_BRANCH="pushes"
-RESULTS_FILE="latest.json"
 GIT_USERNAME="Travis CI"
 GIT_EMAIL="travis@example.com"
-REPOSITORY="edomora97/langmark"
+REPOSITORY="langmark/langmark"
 #GH_TOKEN="the token should not be visible in the repository..."
 
 
